@@ -27,13 +27,3 @@ Part A is to write a cache simulator in csim.c that takes a valgrind memory trac
 
 A reference cache simulator, csim-ref, is given to simulate the behavior of a chace with arbitrary size and associativity on a valgrind trace file. It uses the LRU (least-recently used) replacement policy when choosing which cache line to evict.
 
-Usage: ./csim-ref [-hv] -s <s> -E <E> -b <b> -t <tracefile>
-  
-• -h: Optional help flag that prints usage info
-• -v: Optional verbose flag that displays trace info
-• -s <s>: Number of set index bits (S = 2s
-is the number of sets)
-• -E <E>: Associativity (number of lines per set)
-• -b <b>: Number of block bits (B = 2b
-is the block size)
-• -t <tracefile>: Name of the valgrind trace to replay
